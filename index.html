@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Link Shortener</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Simple Link Shortener</h1>
+        
+        <div class="input-group">
+            <input type="url" id="originalUrl" placeholder="Enter your long URL" required>
+            <button id="shortenBtn">Shorten</button>
+        </div>
+        
+        <div class="result" id="result">
+            <p>Short URL: <span class="short-url" id="shortUrl"></span></p>
+            <button class="copy-btn" id="copyBtn">Copy</button>
+        </div>
+        
+        <div class="url-list" id="urlList">
+            <h2>Your Shortened URLs</h2>
+            <!-- URLs will be added here dynamically -->
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
